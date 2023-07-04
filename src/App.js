@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [todos, setTodos] = useState('')
+  
+  const SetTodo = (e)=> {
+    e.preventDefault()
+    const todoWrap = document.querySelector('.todo-wrap')
+    todoWrap.innerHTML += `<li>${todos}</li>`
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Todo list</h1>
       </header>
+      <form onSubmit={SetTodo}>
+        <input type="text" value={todos} onChange={(e) => setTodos(e.target.value)}/>
+        <button type='submit'>Submit</button>
+      </form>
+      <ul className='todo-wrap'>
+        
+      </ul>
     </div>
   );
 }
