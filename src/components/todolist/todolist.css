@@ -1,0 +1,23 @@
+.todo-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    list-style: none;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(169, 32, 32);
+}
+
+.todo-wrap li {
+    padding: 10px;
+    max-width: 500px;
+    width: 100%;
+    border: 2px solid rgb(6, 162, 66);
+    border-radius: 10px;
+    text-align: start;
+}

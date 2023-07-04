@@ -1,0 +1,11 @@
+.header-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.header-head h1 {
+    color: #fff;
+    font-size: 56px;
+}

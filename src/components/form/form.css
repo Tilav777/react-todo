@@ -1,0 +1,36 @@
+.form {
+    background-color: #fff;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(169, 32, 32);
+    margin-bottom: 40px;
+}
+
+.form input {
+    padding: 10px;
+    outline-color: rgb(6, 162, 66);
+    border: 1px solid #7d7575;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.form button {
+    background-color: rgb(6, 162, 66);
+    padding: 8px 14px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button:hover {
+    opacity: 0.9;
+}
+
+.form button:active {
+    transform: scale(0.9);
+}
